@@ -1,9 +1,12 @@
-import { Container, Content } from "@/ui/Layout";
+import { Container, Content } from "@/components/Layout";
+import PageHeader from "@/components/PageHeader";
 
 export default function Home() {
   return (
     <Container>
-      <Content>dfdfddfdfdfdfdf123df</Content>
+      <Content>
+        <PageHeader>Skill Counter</PageHeader>
+      </Content>
     </Container>
   );
 }

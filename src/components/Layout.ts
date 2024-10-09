@@ -11,9 +11,11 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 500px; /* 500픽셀 고정 폭 */
+  height: 100%;
   background-color: #f0f0f0; /* 예시 배경색 */
   padding: 20px; /* 내부 여백 */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
   border-radius: 8px; /* 모서리 둥글게 */
-  color: red;
+  color: black;
+  padding: 10px 20px;
 `;
