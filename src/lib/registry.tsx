@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useServerInsertedHTML } from "next/navigation";
-import { ServerStyleSheet, StyleSheetManager } from "styled-components";
+import styled, { ServerStyleSheet, StyleSheetManager } from "styled-components";
 
 export default function StyledComponentsRegistry({
   children,
@@ -27,3 +27,26 @@ export default function StyledComponentsRegistry({
     </StyleSheetManager>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: black;
+`;
+
+const Inner = styled.div`
+  background: white;
+  width: 500px;
+  min-height: 100vh;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  box-sizing: content-box;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+  background-color: white;
+  padding: 10px 20px;
+`;

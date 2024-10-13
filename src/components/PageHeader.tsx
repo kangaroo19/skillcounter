@@ -11,7 +11,7 @@ export default function PageHeader({ children }: PageHeaderProps) {
   return <Container>{children}</Container>;
 }
 
-const Container = styled.div`
+const Container = styled.h1`
   font-size: 2rem;
   font-weight: 700;
 `;

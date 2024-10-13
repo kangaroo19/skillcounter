@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: black;
+}
+
+.inner {
+  background: white;
+  width: 500px;
+  min-height: 100vh;
+  box-sizing: content-box;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
+}
