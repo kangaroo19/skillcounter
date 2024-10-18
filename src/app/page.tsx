@@ -1,10 +1,10 @@
 "use client";
 
-import { Layout } from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
 import SkillCard from "@/components/skillCard/SkillCard";
-
-export default function Home() {
+// import executeQuery from "@/lib/db";
+export default async function Home() {
+  const [rows] = await db.query('SELECT * FROM User');
   return (
     <>
       <PageHeader>SKill Counter</PageHeader>
