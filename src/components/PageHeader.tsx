@@ -12,6 +12,13 @@ export default function PageHeader({ children }: PageHeaderProps) {
 }
 
 const Container = styled.h1`
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
+  background: white;
+  border-radius: 16px;
+  padding: 8px;
+  margin: 20px 0;
+  padding: 10px;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 `;
